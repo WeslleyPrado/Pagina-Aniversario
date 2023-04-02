@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor--1: #e7e7e7;
+    --cor--2: #f37751;
+
+    --fonte--1:'Krona One', sans-serif;
+    --fonte--2:'Montserrat', sans-serif; font-size: 24px; font-weight: 300;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.cabecalho{
+    padding: 1% 0% 1% 16%;              /*A sacada foi adicionar 1% acima e abaixo para centralizar o texto dos links do menu nav*/
+    background-color: var(--cor--2);
+}
+.cabecalho__menu{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+.cabecalho__menu__link{
+    text-decoration: none;
+    font-family: var(--fonte--2);
+    font-weight: 525;
+    color: var(--cor--1);
+}
+.cabecalho__menu__link:hover{
+    color: gray;    
+}
+body{
+    box-sizing: border-box;
+    background-color: var(--cor--1);
+    color: var(--cor--2)
+    /*height: 100vh;*/
+}
+.conteudo__inicio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;                      /*Para deixar as "caixas de texto e coisas" do tamanho que quiser, seta isso primeiro e depois vai pros paddings */
+    padding: 10% 10%;
+    gap: 80px;
+}
+.conteudo__inicio__h2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0% 10%;
+    width: 80%;
+    gap: 80px;
+    text-align: center;
+}
+.conteudo__inicio__titulo{
+    font-family: var(--fonte--1);
+    font-size: 40px;
+    text-align: center;
+}
+.conteudo__inicio__imagens{
+    display: flex;
+    flex-wrap:wrap-reverse;                    /*Recurso que pula linha automaticamente baseado no espaçamento disponível*/
+    justify-content: space-evenly;
+    padding: 5% 0%;
+    object-fit: cover;
+    gap: 90px;
+}
+.conteudo__inicio__paragrafo{
+    font-family: var(--fonte--2);
+    font-weight: 500;
+}
+
+.rodape{
+    background-color: var(--cor--2);
+    font-family: var(--fonte--2);
+    text-align: center;
+    color: var(--cor--1);
+    font-weight: 200;
+    font-size: 20px;
+    padding: 2%;
+    line-height: 180%;
+}
